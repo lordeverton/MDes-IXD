@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="myHeader">
+        <button id="colorBtn"> Change Color!!</button>
+    </header>
+    <main id="myMainElement">
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        let mainE = document.getElementById("myMainElement")
+        let clrButton = document.getElementById("colorBtn")
+
+        mainE.innerHTML = "<h1> Hello World</h1>"
+
+        clrButton.addEventListener("click", function(){
+            let valueR = Math.floor(Math.random() * 255)
+            let valueG = Math.floor(Math.random() * 255)
+            let valueB = Math.floor(Math.random() * 255)
+
+            console.log("Red: " + valueR)
+            console.log("Green: " + valueG)
+            console.log("Blue: " + valueB)
+
+            mainE.style.backgroundColor = "rgb(" + valueR + "," + valueG + "," + valueB + ")"
+        })
+    </script>
+
+</body>
+
+</html>
