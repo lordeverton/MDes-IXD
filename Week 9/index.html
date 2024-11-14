@@ -6,12 +6,25 @@
     </head>
 
     <body>
-        <iframe src="https://editor.p5js.org/lordeverton/full/ztDgBcqT-" width="100%" height="600px"></iframe>
+        <iframe src="https://editor.p5js.org/lordeverton/full/ztDgBcqT-" width="100%" height="600px"></iframe>    
+        <img src="shooting-star.png" height="400"><img>
+        <ol>- After playing around with the millis() function to fire a shooting star every 3 seconds, I came across the setInterval function that simplifed the code.</ol>
+        <ol>- The setInterval function requires a function that you want the code to run and an interval, measured in milliseconds.</ol>
+        <ol>- To get this working, I had to create a function called startShootingStar() which initialized the X and Y positions and a enabled/disabled variable.</ol>
+        <ol>- Then, in the code, if the function was "active" then a circle will be drawn and the X position will increment by 5 pixels, which showed the star moving.</ol>
+        <img src="earth.png" width="800"></img>
+        <ol>- After getting the main components of the moon and shooting star, I wanted to make the blue dot appear more like Earth.</ol>
+        <ol>- So, I added some green shapes and adjusted the blue to make it appear more Earth-like. Definitely some improvements to be made here.</ol>
+        <img src="stars.png" width="800"><img>
+        <ol>- I used the strategy of adding a for loop in a for loop to create the "sparkling" stars.</ol>
+        <ol>- This creates 50 stars in random positions.</ol>
+        <img src="nostroke.png" width="800"></img>
+        <ol>- This also created a stroke around Earth.</ol>
+        <ol>- The stroke from the stars gets applied to all shapes, so I called the noStroke() function before drawing the planet Earth.</ol>
         <img src ="image1.png" width="800"></img>
-        <p>This is where I was experimenting with the rocket turning around after it hit the end of the image</p>
+        <ol>- This is where I was experimenting with the rocket turning around after it hit the end of the image</ol>
         <img src="fire.png" width="800"><img>
-        <p>I found someone's fire effect that could be an interesting effect for the "rocket", so I decided to play with the positioning and size and import it to my project</p>
-        <p>Adjusting the class X and Y position, and flipping the VX and VY to the opposites and turning one of them negative made the fire disperse from left to right, instead of bottom to top.</p>    
-        <img src=""
+        <ol>- I found someone's fire effect that could be an interesting effect for the "rocket", so I decided to play with the positioning and size and import it to my project</ol>
+        <ol>- Adjusting the class X and Y position, and flipping the VX and VY to the opposites and turning one of them negative made the fire disperse from left to right, instead of bottom to top.</ol>
     </body>
 </html>
